@@ -58,7 +58,7 @@ margin: 0 auto;
 }
 
 .section {
-padding: 72px 0;
+padding: 48px 0;
 }
 
 .card {
@@ -80,7 +80,7 @@ backdrop-filter: blur(12px);
 }
 
 .header-inner {
-min-height: 72px;
+min-height: 64px;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -88,16 +88,16 @@ gap: 20px;
 }
 
 .brand {
-display: inline-flex;
+display: flex;
 align-items: center;
-gap: 12px;
+gap: 14px;
 color: var(--text);
 text-decoration: none;
 }
 
 .brand-icon {
-width: 42px;
-height: 42px;
+width: 36px;
+height: 36px;
 display: grid;
 place-items: center;
 border-radius: 11px;
@@ -521,7 +521,7 @@ padding-top: 32px;
 .introduction,
 .audience,
 .final-callout {
-padding: 28px;
+padding: 24px;
 }
 
 .features,
@@ -799,6 +799,7 @@ footer {
     width: 42px;
     height: 42px;
     border-radius: 10px;
+    display: block;
 }
 
 .brand strong {
