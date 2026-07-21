@@ -178,7 +178,7 @@ color: var(--muted);
 /* Hero */
 
 .hero {
-padding-top: 64px;
+padding-top: 20px;
 }
 
 .hero-grid {
@@ -805,4 +805,10 @@ footer {
     color: white;
     font-size: 1.35rem;
     font-weight: 700;
+}
+.brand img {
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    display: block;
 }
