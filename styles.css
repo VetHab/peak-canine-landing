@@ -552,3 +552,239 @@ flex-direction: column;
 padding: 30px 22px 24px;
 }
 }
+/* =========================================================
+   LANDING PAGE REFINEMENTS
+   ========================================================= */
+
+
+/* ---------- Top blue navigation bar ---------- */
+
+.site-header {
+  background: var(--blue);
+  border-bottom: 0;
+  color: white;
+  backdrop-filter: none;
+}
+
+.header-inner {
+  min-height: 68px;
+}
+
+/* Hide the old PC box if it is still in the HTML */
+.brand-icon {
+  display: none;
+}
+
+/* Remove spacing left behind by the hidden icon */
+.brand {
+  gap: 0;
+  color: white;
+}
+
+.brand strong {
+  color: white;
+  font-size: 1.15rem;
+  font-weight: 750;
+}
+
+/* Hide "by Canine Cardio" if it is still present */
+.brand small {
+  display: none;
+}
+
+.header-link {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+/* ---------- Hero cards ---------- */
+
+/* Square top corners, rounded bottom corners */
+.hero-grid > .card {
+  border-radius: 0 0 var(--radius) var(--radius);
+}
+
+/* Center everything in the left hero card */
+.hero-copy {
+  align-items: center;
+  text-align: center;
+}
+
+.hero-copy .eyebrow {
+  text-align: center;
+}
+
+/* Keep Peak Canine on one line and reduce its size */
+.hero-copy h1 {
+  font-size: clamp(2.7rem, 5vw, 4rem);
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Center the two-line tagline */
+.tagline {
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Center the description */
+.hero-description {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+
+/* ---------- Install button and help link ---------- */
+
+/* Stack the main button and Installation Help vertically */
+.button-row {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Remove the box around Installation Help */
+.button-row .secondary {
+  min-height: auto;
+  border: 0;
+  border-radius: 0;
+  padding: 2px 4px;
+  background: transparent;
+  box-shadow: none;
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.button-row .secondary:hover {
+  background: transparent;
+  color: var(--blue-dark);
+  transform: none;
+}
+
+/* Center the two checkmark statements */
+.trust-points {
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* ---------- Clear Records blue section ---------- */
+
+.reports h2 {
+  margin-bottom: 12px;
+}
+
+.reports p {
+  max-width: 720px;
+}
+
+
+/* ---------- Footer feedback bar ---------- */
+
+footer {
+  background: var(--blue);
+  border-top: 0;
+  color: white;
+  padding: 22px 0;
+}
+
+.footer-inner {
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.feedback-text {
+  color: white;
+  font-weight: 650;
+}
+
+.feedback-button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 9px 17px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.feedback-button:hover {
+  background: white;
+  color: var(--blue);
+}
+
+.footer-right {
+  margin-left: auto;
+}
+
+.footer-right a,
+.footer-right .beta-link {
+  color: white;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+/* ---------- Mobile refinements ---------- */
+
+@media (max-width: 640px) {
+  .hero-copy h1 {
+    font-size: clamp(2.35rem, 13vw, 3.25rem);
+  }
+
+  .hero-grid > .card {
+    border-radius: 0 0 14px 14px;
+  }
+
+  .button-row {
+    width: 100%;
+  }
+
+  .button-row .primary {
+    width: 100%;
+  }
+
+  .trust-points {
+    justify-items: center;
+  }
+
+  .footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .footer-left {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-right {
+    margin-left: 0;
+  }
+}
