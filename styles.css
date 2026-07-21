@@ -787,4 +787,22 @@ footer {
   .footer-right {
     margin-left: 0;
   }
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.brand img {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+}
+
+.brand strong {
+    color: white;
+    font-size: 1.35rem;
+    font-weight: 700;
 }
