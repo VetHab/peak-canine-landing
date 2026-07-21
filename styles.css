@@ -502,7 +502,7 @@ width: min(calc(100% - 24px), var(--container));
 }
 
 .section {
-padding: 40px 0;
+padding: 30px;
 }
 
 .header-inner {
