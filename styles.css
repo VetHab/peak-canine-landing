@@ -718,7 +718,8 @@ footer {
     font-weight: 650;
 }
 
-.feedback-button {
+.feedback-button,
+.feedback-button:visited {
     display: inline-flex;
     min-height: 44px;
     align-items: center;
@@ -726,10 +727,12 @@ footer {
     border: 2px solid white;
     border-radius: 8px;
     padding: 9px 17px;
-    color: white;
+    color: white !important;
     font-weight: 700;
     text-decoration: none;
+    white-space: nowrap;
 }
+
 
 .feedback-button:hover {
     background: white;
@@ -837,7 +840,7 @@ footer {
     }
 
     .feedback-text {
-        color: white;
+      color: white;
         font-weight: 650;
         white-space: nowrap;
     }
@@ -887,4 +890,3 @@ footer {
             margin-left: 0;
         }
     }
-    
